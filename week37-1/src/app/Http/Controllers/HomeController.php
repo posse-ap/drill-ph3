@@ -10,7 +10,7 @@ class HomeController extends Controller
     public function index(Request $request)
     {
         // generationが1のuser郡を取得
-        $users = User::firstGeneration()->get();
+        $users = User::where('generation', 1)->get();
         return view('home', compact('users'));
     }
 

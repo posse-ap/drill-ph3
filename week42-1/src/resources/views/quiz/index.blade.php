@@ -55,11 +55,7 @@
     formElement.submit();
   };
 
-  // document.querySelectorAll('.js-up-button').addEventListener('click', upToSortNumber);
-
-  document.querySelectorAll('.js-up-button').forEach(function(button){
-    button.addEventListener('click', upToSortNumber);
-  });
+  document.querySelector('.js-up-button').addEventListener('click', upToSortNumber);
 }
 </script>
 @endsection

@@ -9,7 +9,7 @@
 'use strict';
 {
   const studyHoursPost = "{{ json_encode($studyHoursPosts) }}";
-  console.log('@json($studyHoursPosts)');
+  console.log(studyHoursPost);
 }
 </script>
 @endsection
